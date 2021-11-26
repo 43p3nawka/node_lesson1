@@ -4,7 +4,7 @@ import { Transform, Writable } from 'stream';
 const transformStream = new Transform();
 
 transformStream._transform = (chunk, enconding, callback) => {
-	transformStream.push(chunk.toString().split('').reverse().join(''));
+	transformStream.push(chunk.toString().trim().split('').reverse().join(''));
 	callback();
 };
 
