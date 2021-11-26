@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "task1": "nodemon --exec ts-node ./src/task1.ts"
+    "task1": "nodemon --watch src/task1.ts --exec ts-node ./src/task1.ts",
+    "task2": "nodemon --watch src/task2.ts --exec ts-node ./src/task2.ts"
   },
   "author": "",
   "license": "ISC",
